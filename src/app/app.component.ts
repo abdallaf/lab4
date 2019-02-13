@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding-app';
+
+  counter:number = 0;
+  hide: boolean = true;
+  onButtonClick()
+{
+  console.log("button clicked");
+  this.counter++;
+}
+  onDBLClick(){
+    console.log("Look at the star")
+    if(this.hide == true){
+      this.hide = false;
+    }
+    else{
+      this.hide = true;
+    }
+  }
 }
